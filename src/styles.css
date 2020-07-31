@@ -1,12 +1,21 @@
+body {
+  font-family: "Times New Roman";
+}
 .hide {
   display: hidden;
+}
+.btn, .btn:hover {
+  background-color: #000;
+  color: #fff;
+  border-radius: 0;
 }
 .section {
   position: relative;
   overflow: hidden;
 }
 .section-title {
-  font-size: 22px;
+  font-size: 20px;
+  font-weight: bold;
   text-transform: uppercase;
 }
 .section img {
@@ -16,11 +25,11 @@
   top: 10;
 }
 img.img-right {
-  right: -45vh;
+  right: -39vh;
   clip-path: inset(0% 50% 0% 0%);
 }
 img.img-left {
-  left: -45vh;
+  left: -39vh;
 }
 
 /* carousel styles */
@@ -44,16 +53,16 @@ img.img-left {
   top: 0;
 }
 .quote-msg {
-  font-size: calc(14px + 3vmin);
+  font-size: calc(14px + 3.2vmin);
   line-height: calc(1.1em + 1vmin);
 }
 .divider {
-  border-top: 1px solid #000;
-  width: 80px;
+  border-top: 2px solid #000;
+  width: 60px;
   margin: 0 auto;
 }
 .quote-atr {
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 2.5vmin);
   line-height: 1.3em;
 }
 .carousel-control-prev, .carousel-control-next, .carousel-control-prev:hover, .carousel-control-next:hover {
@@ -62,4 +71,9 @@ img.img-left {
 }
 .carousel-indicators li {
   background-color: #000;
+  background-clip: border-box;
+  border-top: 0;
+  clip-path: circle(50%);
+  width: 13px;
+  margin: 0 10px;
 }
