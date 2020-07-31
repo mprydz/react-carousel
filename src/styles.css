@@ -1,0 +1,65 @@
+.hide {
+  display: hidden;
+}
+.section {
+  position: relative;
+  overflow: hidden;
+}
+.section-title {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.section img {
+  position: absolute;
+  z-index: -1;
+  height: 80vh;
+  top: 10;
+}
+img.img-right {
+  right: -45vh;
+  clip-path: inset(0% 50% 0% 0%);
+}
+img.img-left {
+  left: -45vh;
+}
+
+/* carousel styles */
+@media(max-width: 767px) {
+  .height {
+    height: 85vh;
+  }
+}
+@media(min-width: 768px) {
+  .height {
+    height: 75vh;
+  }
+}
+@media(min-width: 992px) {
+  .height {
+    height: 65vh;
+  }
+}
+.carousel-caption {
+  color: #000;
+  top: 0;
+}
+.quote-msg {
+  font-size: calc(14px + 3vmin);
+  line-height: calc(1.1em + 1vmin);
+}
+.divider {
+  border-top: 1px solid #000;
+  width: 80px;
+  margin: 0 auto;
+}
+.quote-atr {
+  font-size: calc(10px + 2vmin);
+  line-height: 1.3em;
+}
+.carousel-control-prev, .carousel-control-next, .carousel-control-prev:hover, .carousel-control-next:hover {
+  color: #000;
+  opacity: 1;
+}
+.carousel-indicators li {
+  background-color: #000;
+}
